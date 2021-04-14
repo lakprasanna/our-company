@@ -249,6 +249,7 @@ animation: mymove 8s infinite;
    @media (max-height: 500px) {
     #banner {
       height: 120vh;
+      width:50%;
     }
   }
 
@@ -697,82 +698,9 @@ animation: mymove 8s infinite;
       display: inline-block;
     }
   }
-  #service-page {
-    padding: 80px 0;
-  }
-  
-  #service-page .service-page-content {
-    padding-top: 40px;
-    position: relative;
-    width:90%;
-    animation: mymove2 6s;
 
-  }
-  @keyframes mymove2 {
-    from {right: 0px;}
-    to {right: 100px;}
-
-  }
-  
-  #service-page .service-page-content h2 {
-    color: #CE3C7A;
-
-    font-weight: 700;
-  }
-  
 
   
-  #service-page .service-page-content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  #service-page .service-page-content ul li {
-    padding-bottom: 10px;
-  }
-  
-  #service-page .service-page-content ul li i {
-    font-size: 20px;
-    padding-right: 4px;
-    color: #1bb1dc;
-  }
-  
-  #service-page .service-page-img {
-    position: relative;
-    margin: 30px 30px 30px 30px;
-    animation: mymove1 6s;
-  }
-  @keyframes mymove1 {
-    from {left: 0px;}
-    to {left: 100px;}
-  }
-  #service-page .service-page-img img {
-    width: 70%;
-    border: 8px solid #fff;
-    transition: .5s;
-    height:300px;
-
-  }
-  
-  #service-page .service-page-img img:hover {
-    width: 70%;
-    transform: scale(1.03);
-  }
-
-    @media (max-width: 1200px) {
-        
-            @keyframes mymove1 {
-                from {left: 0px;}
-                to {left: 50px;}
-              }
-              @keyframes mymove2 {
-                from {right: 0px;}
-                to {right: 50px;}
-            
-              }
-
-        
-        }
 
       
         @media (max-width: 990px) {
@@ -781,70 +709,11 @@ animation: mymove 8s infinite;
     margin-top:10px;
 }
 
+
         }
 
-     
-        #service-page .service-page-content2 {
-            padding-top: 40px;
-            position: relative;
-            width:100%;
-            margin-left:30px;
-            animation: mymove3 6s;
-   
-          }
-          @keyframes mymove3 {
-            from {left: 0px;}
-            to {left: 50px;}
         
-          }
-          
-          #service-page .service-page-content2 h2 {
-            color: blue;
-        
-            font-weight: 700;
-          }
-          
-        
-          
-          #service-page .service-page-content2 ul {
-            list-style: none;
-            padding: 0;
-          }
-          
-          #service-page .service-page-content2 ul li {
-            padding-bottom: 10px;
-          }
-          
-          #service-page .service-page-content2 ul li i {
-            font-size: 20px;
-            padding-right: 4px;
-            color: #1bb1dc;
-          }
-          
-          #service-page .service-page-img2 {
-            position: relative;
-        margin-top:30px;
-        margin-right:0px;
-        margin-left:170px;
-            animation: mymove4 6s;
-          }
-          @keyframes mymove4 {
-            from {right: 0px;}
-            to {right: 50px;}
-          }
-          #service-page .service-page-img2 img {
-            width: 50%;
-            border: 8px solid #fff;
-            transition: .5s;
-            height:300px;
-        
-          }
-          
-          #service-page .service-page-img2 img:hover {
-            width: 50%;
-            transform: scale(1.03);
-          }
-
+    
       
 #Technologies {
     padding: 60px 0 40px 0;
@@ -916,13 +785,13 @@ animation: mymove 8s infinite;
   {
     margin-top:50px;
     position: relative;
- animation: mymove5 6s;
+ /* animation: mymove5 6s; */
           }
-          @keyframes mymove5 {
+          /* @keyframes mymove5 {
             from {bottom: 0px;}
             to {bottom: 50px;}
           
-  }
+  } */
   .about-page img
   {
     width:100%;
@@ -1009,7 +878,7 @@ animation: mymove 8s infinite;
     font-size: 14px;
   }
 
-
+/* 
   .portfolio #portfolio-flters {
     padding: 0;
     margin: 0 auto 50px auto;
@@ -1034,6 +903,56 @@ animation: mymove 8s infinite;
     color: #fff;
        background: #CE3C7A;
    
+  }
+  
+
+  
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+  */
+ 
+  
+  
+
+
+  iframe
+  {
+    margin-top:50px;
+    margin-bottom: 50px;
+  }
+  .section-headline h2
+  {
+    margin-top:50px;
+  }
+  .form
+
+  {
+    margin-top:50px;
+  }
+  .portfolio #portfolio-flters {
+    padding: 0;
+    margin: 0 auto 50px auto;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 20px 10px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #4d4643;
+    transition: all 0.3s;
+    border-radius: 4px;
+  }
+  
+  .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+    color: #fff;
+    background: blue;
   }
   
   .portfolio #portfolio-flters li:last-child {
@@ -1114,17 +1033,12 @@ animation: mymove 8s infinite;
   
 
 
-  iframe
-  {
-    margin-top:50px;
-    margin-bottom: 50px;
-  }
-  .section-headline h2
-  {
-    margin-top:50px;
-  }
-  .form
 
-  {
-    margin-top:50px;
-  }
+#features {
+  padding: 80px 0;
+}
+
+#features h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
