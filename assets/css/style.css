@@ -40,6 +40,7 @@
     max-height: 40px;
     position: fixed;
     z-index:5;
+   left:80px;
   }
   #header {
     background: #fff;
@@ -114,8 +115,16 @@
 
 
 }
-
-
+@media (min-width: 768px){
+.navbar-expand-md {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  
+    left: 58px;
+}
+}
 
   @media (max-width:1000px)
   {
@@ -161,12 +170,12 @@
     top: 70px;
 left:55%;
 width:50%;
-animation: mymove 8s infinite;
+/* animation: mymove 8s infinite; */
   }
-  @keyframes mymove {
+  /* @keyframes mymove {
     from {bottom: 20px;}
     to {bottom: 200px;}
-  }
+  } */
   
   #banner .carousel-content {
     background: rgba(4, 4, 4, 0.7);
@@ -211,28 +220,53 @@ animation: mymove 8s infinite;
       width: 60%;
     }
   
-  }
+  } 
   @media (max-width: 1112px) {
     #banner .carousel-container {
       top: 58px;
       left:55%;
+ 
     }
 
 }
 @media (max-width: 1019px) {
     #banner .carousel-container {
       top: 58px;
-      width: 40%;
+      width: 50%;
       
     }
 
 }
+@media (max-width: 1029px) {
+  #banner .carousel-container .carousel-content {
+    top: 58px;
+    width: 90%;
+
+  }
+
+}
+@media (max-width: 600px) {
+  #banner .carousel-container .carousel-content {
+    top: 58px;
+    width: 90%;
+
+  }
+
+}
+
+
+@media (max-width: 1029px) {
+  #banner .carousel-container{
+    top: 58px;
+    width: 70%;
+left:20px;
+  }
+
+}
   @media (max-width: 992px) {
-    #banner .carousel-container {
-      top: 58px;
-      left:50px;
-      
-    }
+
+
+
   
 
 
@@ -249,8 +283,9 @@ animation: mymove 8s infinite;
    @media (max-height: 500px) {
     #banner {
       height: 120vh;
-      width:50%;
+      
     }
+
   }
 
 
@@ -483,7 +518,7 @@ animation: mymove 8s infinite;
   }
        
   .counts::before {
-    content: "";
+   
     position: absolute;
     background: rgba(255, 255, 255, 0.8);
     left: 0;
@@ -878,39 +913,8 @@ animation: mymove 8s infinite;
     font-size: 14px;
   }
 
-/* 
-  .portfolio #portfolio-flters {
-    padding: 0;
-    margin: 0 auto 50px auto;
-    list-style: none;
-    text-align: center;
-  }
-  
-  .portfolio #portfolio-flters li {
-    cursor: pointer;
-    display: inline-block;
-    padding: 8px 20px 10px 20px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-    text-transform: uppercase;
-    color: #4d4643;
-    transition: all 0.3s;
-    border-radius: 4px;
-  }
-  
-  .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-    color: #fff;
-       background: #CE3C7A;
-   
-  }
-  
 
-  
-  .portfolio .portfolio-item {
-    margin-bottom: 30px;
-  }
-  */
+ 
  
   
   
@@ -930,106 +934,6 @@ animation: mymove 8s infinite;
   {
     margin-top:50px;
   }
-  .portfolio #portfolio-flters {
-    padding: 0;
-    margin: 0 auto 50px auto;
-    list-style: none;
-    text-align: center;
-  }
-  
-  .portfolio #portfolio-flters li {
-    cursor: pointer;
-    display: inline-block;
-    padding: 8px 20px 10px 20px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-    text-transform: uppercase;
-    color: #4d4643;
-    transition: all 0.3s;
-    border-radius: 4px;
-  }
-  
-  .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-    color: #fff;
-    background: blue;
-  }
-  
-  .portfolio #portfolio-flters li:last-child {
-    margin-right: 0;
-  }
-  
-  .portfolio .portfolio-item {
-    margin-bottom: 30px;
-  }
-  
-  .portfolio .portfolio-item .portfolio-info {
-    opacity: 0;
-    position: absolute;
-    left: 30px;
-    right: 30px;
-    bottom: 0;
-    z-index: 3;
-    transition: all ease-in-out 0.3s;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 15px;
-  }
-  
-  .portfolio .portfolio-item .portfolio-info h4 {
-    font-size: 18px;
-    color: #fff;
-    font-weight: 600;
-    color: #111;
-  }
-  
-  .portfolio .portfolio-item .portfolio-info p {
-    color: #444444;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-  
-  .portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
-    position: absolute;
-    right: 40px;
-    font-size: 24px;
-    top: calc(50% - 18px);
-    color: #2b2b2b;
-  }
-  
-  .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-    color: #1bbd36;
-  }
-  
-  .portfolio .portfolio-item .portfolio-info .details-link {
-    right: 10px;
-  }
-  
-  .portfolio .portfolio-item .portfolio-links {
-    opacity: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 3;
-    position: absolute;
-    transition: all ease-in-out 0.3s;
-  }
-  
-  .portfolio .portfolio-item .portfolio-links a {
-    color: #fff;
-    margin: 0 2px;
-    font-size: 28px;
-    display: inline-block;
-    transition: 0.3s;
-  }
-  
-  .portfolio .portfolio-item .portfolio-links a:hover {
-    color: #57e76f;
-  }
-  
-  .portfolio .portfolio-item:hover .portfolio-info {
-    opacity: 1;
-    bottom: 20px;
-  }
   
 
 
@@ -1042,3 +946,80 @@ animation: mymove 8s infinite;
   font-weight: 600;
   font-size: 24px;
 }
+
+
+
+.tab-content div div img
+{
+  border-radius: 20px;
+}
+
+.nav-tabs li a
+{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.nav-tabs li a:hover
+{
+color:#CE3C7A;
+}
+.nav-tabs {
+  border-bottom: 0px solid transparent;
+}
+.nav-tabs .nav-link {
+  border: 0px solid transparent;
+}
+
+/* preloder */
+/* Center the loader */
+/* #loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} */
+
+/* Add animation to "page content" */
+/* .animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}  */
+
