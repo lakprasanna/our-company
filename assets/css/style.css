@@ -1023,3 +1023,12 @@ color:#CE3C7A;
   text-align: center;
 }  */
 
+#loader img
+{
+ width:10%;
+ height:200px;
+position: absolute;
+left:45%;
+top:30%;
+z-index:2;
+}
